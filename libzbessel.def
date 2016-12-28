@@ -1,0 +1,10 @@
+LIBRARY "zbessel.dll"
+
+EXPORTS
+zbesh
+zbesi
+zbesj
+zbesk
+zbesy
+zairy
+zbiry

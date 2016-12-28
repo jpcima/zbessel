@@ -1,0 +1,29 @@
+CROSS_COMPILE = i686-w64-mingw32-
+CXX = $(CROSS_COMPILE)g++
+CXXFLAGS = -std=gnu++11 -O2 -fPIC -fvisibility=hidden -fno-rtti -fno-exceptions
+LDFLAGS =
+
+DESTDIR =
+PREFIX = /usr/local
+
+all: zbessel.dll libzbessel.dll.a
+.PHONY: all
+
+clean:
+	rm -f zbessel.dll libzbessel.dll.a zbessel.o
+.PHONY: clean
+
+install: all
+	install -D -m755 zbessel.dll $(DESTDIR)$(PREFIX)/bin/zbessel.dll
+	install -D -m644 libzbessel.dll.a $(DESTDIR)$(PREFIX)/lib/libzbessel.dll.a
+	install -D -m644 zbessel.h $(DESTDIR)$(PREFIX)/include/zbessel.h
+	install -D -m644 zbessel.hh $(DESTDIR)$(PREFIX)/include/zbessel.hh
+	cp -dr zbessel $(DESTDIR)$(PREFIX)/include/
+
+zbessel.dll: zbessel.o
+	$(CXX) -shared -o $@ $^ $(LDFLAGS) libzbessel.def -Wl,--out-implib,libzbessel.dll.a
+
+libzbessel.dll.a: zbessel.dll
+
+zbessel.o: zbessel.cc
+	$(CXX) $(CXXFLAGS) -c -o $@ $^
