@@ -15,15 +15,15 @@ void zbknu(double zr, double zi, double fnu, int kode, int n, double *__restrict
   /* Initialized data */
 
   const int kmax = 30;
-  const double spi = 6. * M_1_PI;
-  const double hpi = M_PI_2;
-  static const double fpi = M_2_SQRTPI * std::exp2(0.75);
+  const double spi = 1.90985931710274402923L;  // 6/pi
+  const double hpi = 1.570796326794896558L;  // pi/2
+  const double fpi = 1.89769999331517728893L;  // 2**(1.75)/sqrt(pi)
   const double tth = 2. / 3.;
   const double cc[8] = {.577215664901532861,     -.0420026350340952355, -.0421977345555443367,   .00721894324666309954, -2.15241674114950973e-4, -2.01348547807882387e-5, 1.13302723198169588e-6,  6.11609510448141582e-9};
   const double ctwor = 2.;
   const double r1 = 2.;
-  const double dpi = M_PI;
-  const double rthpi = std::sqrt(M_PI_2);
+  const double dpi = 3.14159265358979323846L;
+  const double rthpi = 1.25331413731550025121L;  // sqrt(pi/2);
 
   /* Local variables */
   int i__, j, k;

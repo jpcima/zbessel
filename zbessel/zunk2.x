@@ -13,15 +13,15 @@ void zunk2(double zr, double zi, double fnu, int kode, int mr, int n,
            double alim) {
   /* Initialized data */
 
-  static const double aic = std::lgamma(-0.5);
+  const double aic = 1.26551212348464539649L;  // lgamma(-0.5)
   const double cipr[4] = {1., 0., -1., 0.};
   const double cipi[4] = {0., -1., 0., 1.};
   const double cr1r = 1.;
   const double cr1i = 1.73205080756887729;
   const double cr2r = -.5;
   const double cr2i = -.866025403784438647;
-  const double hpi = M_PI_2;
-  const double pi = M_PI;
+  const double hpi = 1.570796326794896558L;  // pi/2
+  const double pi = 3.14159265358979323846L;
 
   /* Local variables */
   int i__, j, k, ib, ic;

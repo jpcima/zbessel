@@ -14,7 +14,7 @@ int zbesh(double zr, double zi, double fnu, int kode, int m,
 
   /* Initialized data */
 
-  const double hpi = M_PI_2;
+  const double hpi = 1.570796326794896558L;  // pi/2
 
   /* Local variables */
   int ierr;

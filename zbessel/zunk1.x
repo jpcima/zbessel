@@ -13,7 +13,7 @@ void zunk1(double zr, double zi, double fnu, int kode, int mr, int n,
            double alim) {
   /* Initialized data */
 
-  const double pi = M_PI;
+  const double pi = 3.14159265358979323846L;
 
   /* Local variables */
   int i__, j, k, m, ib, ic;

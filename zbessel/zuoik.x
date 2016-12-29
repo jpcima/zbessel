@@ -12,7 +12,7 @@ void zuoik(double zr, double zi, double fnu, int kode, int ikflg, int n,
            double alim) {
   /* Initialized data */
 
-  static const double aic = std::lgamma(-0.5);
+  const double aic = 1.26551212348464539649L;  // lgamma(-0.5)
 
   /* Local variables */
   int i__;

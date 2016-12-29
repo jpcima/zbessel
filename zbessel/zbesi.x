@@ -14,7 +14,7 @@ int zbesi(double zr, double zi, double fnu, int kode, int n, double *__restrict_
 
   /* Initialized data */
 
-  const double pi = M_PI;
+  const double pi = 3.14159265358979323846L;
 
   /* Local variables */
   int ierr;

@@ -12,7 +12,7 @@ void zacai(double zr, double zi, double fnu, int kode, int mr, int n,
            double elim, double alim) {
   /* Initialized data */
 
-  const double pi = M_PI;
+  const double pi = 3.14159265358979323846L;
 
   /* Local variables */
   double az;

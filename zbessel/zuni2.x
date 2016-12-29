@@ -15,8 +15,8 @@ void zuni2(double zr, double zi, double fnu, int kode, int n, double *__restrict
 
   const double cipr[4] = {1., 0., -1., 0.};
   const double cipi[4] = {0., 1., 0., -1.};
-  const double hpi = M_PI_2;
-  static const double aic = std::lgamma(-0.5);
+  const double hpi = 1.570796326794896558L;  // pi/2
+  const double aic = 1.26551212348464539649L;  // lgamma(-0.5)
 
   /* Local variables */
   int i__, j, k, nd;

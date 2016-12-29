@@ -11,8 +11,8 @@ void zasyi(double zr, double zi, double fnu, int kode,
            int n, double *__restrict__ yr, double *__restrict__ yi, int *__restrict__ nz,
            double rl, double tol, double elim, double alim) {
   /* Initialized data */
-  const double pi = M_PI;
-  const double rtpi = M_1_PI / 2;
+  const double pi = 3.14159265358979323846L;
+  const double rtpi = 0.159154943091895335769L; // 1/(2*pi)
 
   /* Local variables */
   int i__, j, k, m;

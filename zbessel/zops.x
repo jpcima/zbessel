@@ -39,8 +39,8 @@ void zdiv(R ar, R ai, R br, R bi, R *cr, R *ci) {
 
 template <class R>
 void zsqrt(R ar, R ai, R *br, R *bi) {
-  const R drt = M_SQRT1_2;
-  const R dpi = M_PI;
+  const R drt = 0.707106781186547461715L;  // 1/sqrt(2)
+  const R dpi = 3.14159265358979323846L;
 
   R zm;
   R dtheta;
@@ -100,8 +100,8 @@ void zexp(R ar, R ai, R *br, R *bi) {
 
 template <class R>
 void zlog(R ar, R ai, R *br, R *bi) {
-  const R dpi = M_PI;
-  const R dhpi = M_PI_2;
+  const R dpi = 3.14159265358979323846L;
+  const R dhpi = 1.570796326794896558L;  // pi/2
 
   R zm;
   R dtheta;

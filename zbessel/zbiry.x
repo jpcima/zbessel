@@ -17,7 +17,7 @@ int zbiry(double zr, double zi, int id, int kode, double *__restrict__ bir, doub
   const double c1 = .614926627446000736;
   const double c2 = .448288357353826359;
   const double coef = .577350269189625765;
-  const double pi = M_PI;
+  const double pi = 3.14159265358979323846L;
 
   /* Local variables */
   int ierr;

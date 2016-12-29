@@ -11,7 +11,7 @@ void zrati(double zr, double zi, double fnu, int n, double *__restrict__ cyr,
            double *__restrict__ cyi, double tol) {
   /* Initialized data */
 
-  const double rt2 = M_SQRT2;
+  const double rt2 = 1.41421356237309514547L;  // sqrt(2)
 
   /* Local variables */
   int i__, k;
